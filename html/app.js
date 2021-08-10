@@ -34,6 +34,14 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function(){
+  $(document).bind('keydown', function(e) { 
+      if (e.which == 27) {
+        cod.Close();
+      }
+  }); 
+});
+
 $(".close").click(function (e) {
   cod.Close();
 });
